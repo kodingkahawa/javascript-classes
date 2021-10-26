@@ -1,30 +1,29 @@
-// introduction to javascript
+// introduction to javascript (inline comment)
 
 /* lorem ipsume lorem ipsume lorem ipsume lorem ipsume
  lorem ipsume lorem ipsume lorem ipsume lorem ipsume
+ (Block comment)
  */
 
-//  Primitive data types
+
+ //  Primitive data types
 
  // string
  var book = "Javascript book ";
 
-
-//number 
+// number 
  let pageNumber = 34;
-//  console.log(pageNumber);
+ console.log(pageNumber);
 
  pageNumber = "peter chege";
-//  console.log(pageNumber);
+ console.log(pageNumber);
 
- //boolean
+ // boolean
  var chege = true;
 
- //symbols
- var mySymbol = "$peter";
 
-
- var kimani;
+// initializing a variable
+var kimani;
 
 
  // Object
@@ -36,13 +35,16 @@
      "classes": true,
  };
 
+ 
+//  Arrays
+
  var shoppingListArry  = ["Tomatoes", 45, true];
 
  const humanDnaArray = [
     {
-     "gender": "Female",
-     "name": "catherine",
-     "age": 32,
+        "gender": "Female",
+        "name": "catherine",
+        "age": 32,
     },
 
     {
@@ -65,7 +67,14 @@
     
 ]
 
- var shop_list = 50;
+// Displaying the element or objects in the array
+console.log(humanDnaArray);
 
+
+// finding the length of an array
+ console.log(humanDnaArray.length);
+
+ // selection the first item of an array
  console.log(humanDnaArray[0]);
+
 

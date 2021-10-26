@@ -1,9 +1,12 @@
+
 var firstname = "Koding";
 var secondName = "Kahawa";
 
+
+// concatinating a string
 var myCommunity = firstname + secondName;
 
-// console.log(myCommunity);
+console.log(myCommunity);
 
 
 function nameChecker (firstname) {
@@ -16,4 +19,4 @@ function nameChecker (firstname) {
     
 }
 
-nameChecker(firstname);
+nameChecker(firstname); //passing a value from a variable to a function
