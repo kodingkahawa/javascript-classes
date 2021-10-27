@@ -32,10 +32,56 @@ bikeArray.pop();
 
 console.log(bikeArray);
 
+/* Mapping objects from an Array */
 
+let numbers = [2, 4, 6, 8, 10];
 
+// function to return the square of a number
 
-const shopingCart = ['cake', 'sweets', 'shoes'];
-var a = ['sweets'];
+function square(number) {
+  return number * number;
+}
 
-console.log(a.includes(shopingCart));
+// apply square() function to each item of the numbers list
+
+let square_numbers = numbers.map(square);
+console.log(square_numbers);
+
+const employees = [
+    { name: "Adam", salary: 5000, bonus: 500, tax: 1000 },
+    { name: "Noah", salary: 8000, bonus: 1500, tax: 2500 },
+    { name: "Fabiano", salary: 1500, bonus: 500, tax: 200 },
+    { name: "Alireza", salary: 4500, bonus: 1000, tax: 900 },
+];
+
+// calculate the net amount to be given to the employees
+const calcAmt = (obj) => {
+    newObj = {};
+    newObj.name = obj.name;
+    newObj.netEarning = obj.salary + obj.bonus - obj.tax;
+    return newObj;
+};
+
+// program to extract value as an array from an array of objects
+
+function extractValue(arr, prop) {
+
+    let extractedValue = [];
+
+    for (let i=0; i < arr.length ; ++i) {
+
+        // extract value from property
+        extractedValue.push(arr[i][prop]);
+    }
+    return extractedValue;
+}
+
+const objArray = [{a: 1, b: 2}, {a: 4, b: 5}, {a: 8, b: 9}];
+
+// passing an array of objects and property 'a' to extract
+const result = extractValue(objArray, 'a');
+console.log(result);
+
+let newArr = employees.map(calcAmt);
+console.log(newArr);
+
