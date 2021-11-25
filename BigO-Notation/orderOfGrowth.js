@@ -128,6 +128,39 @@ function cube(n){
     }
 }
 
+/* Exponential  */
+
+function fib(n) {
+    if(n === 0){
+        return 0;
+    }
+    if (n ===1){
+        return 1
+    }
+    console.log("the values:",fib)
+    return fib(n-1) + fib(n-2)
+    
+}
+
+
+/* Factorial  */
+
+function factorial(n) {
+    if(n === 0){
+        console.log("***********")
+    }
+
+    for (let x = 0; x < n; x++) {
+        factorial(n-1);
+    }
+}
+
+
+// var arr5 = [34,67,56,89,43,65,2324,7];
+
+var arr5 = 4;
+
+
 //function calls
 
 balance();
@@ -135,3 +168,5 @@ linearFun(arr1);
 binarySearch(arr2,start,end,target);
 square(4);
 cube(3);
+fib(500);
+console.log(factorial(arr5));
